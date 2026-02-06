@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Nathan Nguyen
+- **Dot Number**: nguyen.3278
+- **Due Date**: 2/6 @ 12:40 PM EST
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,21 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+Well, I have a variety of hobbies. While not my focus for my major (it will be software engineering) I really enjoy game design and like to participate in game jams. Because of that, I like to compose instrumental music (or really any music that doesn't have voices) and do pixel/pastel art. I like to play video games, though I suppose that is also obvious. Some other things I like is writing in a sense, as I like to make DnD campaigns with some friends and go off of that. Lastly, I also like to do needlepoint and crochet whenever I feel bored.
+
+If whoever is reading this wants, to see some examples, this is my itch page that has two games from previous game jams that I made solo: https://kirazoyuki.itch.io/
+
+Additionally, here's an axolotl and a hedgehog.
+![Axolotl](axo.png)
+![HedgeHog](wawa.png)
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +132,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +199,95 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: DiceBag
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose is to model a typical dice bag with a collection of dice one
+    would have in any sort of tabletop game. Some simple implementations would
+    be to add, remove, or roll a singular dice in the bag if it is present.
+    More complex implementation could be rolling multiple dice at once, adding
+    the totals, or rolling multiple different dice at once.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void addDie(int sides)`: Adds a die with a certain amount of sides
+    - `void removeDie(int sides)`: Removes a die with a certain amount of sides, if present
+    - `int rollDie(int sides)`: Rolls a die with a certain amount of sides and returns the result, if present
+    - `int countDie(int sides)`: Returns the number of die with a certain amount of sides in the bag
+    - `void clear()`: Removes all die in the bag
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `int rollAll()`: Rolls all the die in the bag and returns the result
+    - `Sequence<Integer> rollResults()`: Rolls all the die in the bad and returns the results of each die.
+    - `int totalDie()`: Returns the number of all die regardless of type
+    - `boolean containsDie(int sides)` — Reports whether at least one die of a given type exists
+    - `void addMultiple(int sides, int amount)` — Adds multiple dice of a certain type
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I believe so, as you could support mutation with methods like clear(), which was noted above, as well as newInstance() and transferFrom(). Additionally, adding and removing the die changes the state of the diceBag.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Maybe? You could use Map<Integer, Integer> to see how many dice exist for each number of sides.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't believe so, mostly uses integers. I could do Min_Sides = 2 to make it so that it alsways needs at least 2 sides in a dice.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, for example roll all is based off of rollDie, totalDie is based off of count Die, etc.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: NoteSequence
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose is to model a sequence of musical notes, as one could see in sheet music. Each note will have information about it's pitch (the sound) and the duration (the sound's length). The basic kernel methods would be to add, remove, and return the notes in the sequence, while the secondary could be transposing (making all the notes go up a certain number of pitch), reversal, or repeating, simulating a very watered down version of music making apps.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void addNote(int position, Note n)`: Inserts a note at the position
+    - `void removeNote(int position)`: Removes a note at the position
+    - `note noteAt(int position)`: Returns the note at the position
+    - `int legnth()`: returns the number of notes in sequence
+    - `void clear()`: removes all the notes
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void transpose(int semitones)`: shifts the pitch of all notes in sequence
+    - `void reverse()`: reverses the order of the notes
+    - `void repeat(int times)`: adds the sequence to itself x amount of times
+    - `NoteSequence subSequence(int start, int end)`: Removes and returns a portion of the sequence
+    - `int totalDuration()`: returns the sum of all durations of the notes
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, using inserting, removing, reversing, and transposing modifies the sequence directly
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, as Note is an internal calss that has pitch and duration.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Normally in music you could, but sometimes music has odd amounts of times within (like a quarter note being split into 7), so I see no reason to implement constant duration types possible. I also think it would make this more complicated than need be.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, for example reverse() would need a loop inside the function that calls removeNote() and addNote() repeatedly.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: GridPosition
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Not sure if this is too basic, but the purpose is to model position in 2d grids, whether for pixel art or game layouts. The kernel could set and access the coordinates of a pixel in the grid. Secondary interface could check if certain pixels are next to eachother on the grid, find the distance, or check the cardinal or directionless distance (is called the manhattanDistance or the euclideanDistance).
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void setPosition(int x, int y)`: updates the position to these coordinates
+    - `int x()`: reports the pixel's x-coordinate
+    - `int y()`: reports the pixel's y-coordinate
+    - `void translate(int dx, int dy)`: Shifts the position by a given offset
+    - `void clear()`: Changes posiiton back to default aka (0,0)
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `int manhattanDistance(GridPosition other)`: Finds grid-based distance
+    - `double euclideanDistance(GridPosition other)`: Finds straight-line distance
+    - `boolean isAdjacent(GridPosition other)`: Returns whether positions share an edge
+    - `String toString()`: Gives string representation of the position
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, setPosition(), translate(), and clear() all change the state.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - There is no need, most likely, since it only needs two integers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - There is also no need, since a grid should have negatives and positives. Though later on if I decide this should only be for pixel art, I could defince constants for origins to make sure the position of the pixel can not be out of the canvas.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, as manhattanDistance(GridPosition other) must compute distance using x() and y(), and same goes for euclideanDistance(GridPosition other), except this one uses pythag theorem.
 
 ## Post-Assignment
 
@@ -280,8 +295,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -320,8 +333,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -330,11 +341,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -360,8 +367,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
