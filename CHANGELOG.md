@@ -13,3 +13,13 @@ the following form: YYYY.0M.0D.
 - Designed a DiceBag component
 - Designed a NoteSequence component
 - Designed a GridPosition component
+
+## 2026.02.25
+
+### Added
+
+- Designed a proof of concept for NoteSequence component
+
+### Updated
+
+- Changed design to include example implementation of design for Note Sequence
