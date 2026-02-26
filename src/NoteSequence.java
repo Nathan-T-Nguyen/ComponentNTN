@@ -188,5 +188,4 @@ public class NoteSequence {
         }
         System.out.println("\nTotal Duration: " + seq.totalDuration());
     }
-
 }
