@@ -106,8 +106,7 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-<!-- TODO: briefly argue your choice of design or design something
-new; then delete this comment -->
+I think for now, I would want to try to implement the NoteSequence. I have a personal interest in instrumental music making, so this design would be the one I would be the most motivated to do. Additionally, in the real world it could realistically be used in procedural music or small composition tools. Also, base methods of things like transposing and repetition is relatively simple and not too complicated, so I don't think I would heavily struggle doing this idea for the component project.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
