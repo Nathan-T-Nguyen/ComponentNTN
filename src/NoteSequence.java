@@ -169,11 +169,12 @@ public class NoteSequence {
      * @param args
      */
     public static void main(String[] args) {
+        final int baseD = 62; // This is just so I stop seeing magic number notifs.
         NoteSequence seq = new NoteSequence();
         // Adds C, D, and E, which have duration quarter note 1, 1, and 2 respectively.
-        seq.addNote(0, new Note(60, 1));
-        seq.addNote(1, new Note(62, 1));
-        seq.addNote(2, new Note(64, 2));
+        seq.addNote(0, new Note(baseD - 2, 1));
+        seq.addNote(1, new Note(baseD, 1));
+        seq.addNote(2, new Note(baseD + 2, 2));
         System.out.println("Original sequence:");
         for (int i = 0; i < seq.length(); i++) {
             System.out.println(seq.noteAt(i));
