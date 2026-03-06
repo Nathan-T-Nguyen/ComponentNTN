@@ -23,3 +23,13 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include example implementation of design for Note Sequence
+
+## 2026.03.05
+
+### Added
+
+- Designed kernel and enhanced interfaces for NoteSequence component
+
+### Updated
+
+- Changed design to include kernal method interface, and enhanced interface with secondary, all with javadoc comments
