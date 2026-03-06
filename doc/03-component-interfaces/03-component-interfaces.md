@@ -131,7 +131,7 @@ of it in this folder. You may also embed it just below using markdown syntax
 (i.e., `![ALT TEXT](path/to/file)`).
 
 
-Ascii Art Tool
+I made with Ascii Art Tools. (Did not include the clear method since Standard has that alr.)
           +-----------+
           | Standard  |
           +-----------+
