@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author Nathan Nguyen
  */
-public class NoteSequence {
+public class NoteSequenceDemo {
     /** Class for a note in sheet music. */
     private static class Note {
         /**
@@ -61,7 +61,7 @@ public class NoteSequence {
 
     /**
      */
-    public NoteSequence() {
+    public NoteSequenceDemo() {
         this.notes = new ArrayList<>();
     }
 
@@ -144,8 +144,8 @@ public class NoteSequence {
      *            index of end of wanted subSequence
      * @return The sequence
      */
-    public NoteSequence subSequence(int start, int end) {
-        NoteSequence sub = new NoteSequence();
+    public NoteSequenceDemo subSequence(int start, int end) {
+        NoteSequenceDemo sub = new NoteSequenceDemo();
         for (int i = start; i < end; i++) {
             sub.addNote(sub.length(), this.notes.get(i));
         }
@@ -170,7 +170,7 @@ public class NoteSequence {
      */
     public static void main(String[] args) {
         final int baseD = 62; // This is just so I stop seeing magic number notifs.
-        NoteSequence seq = new NoteSequence();
+        NoteSequenceDemo seq = new NoteSequenceDemo();
         // Adds C, D, and E, which have duration quarter note 1, 1, and 2 respectively.
         seq.addNote(0, new Note(baseD - 2, 1));
         seq.addNote(1, new Note(baseD, 1));

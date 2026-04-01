@@ -23,7 +23,7 @@ import components.standard.Standard;
  * addNote(0, n) then length() = 1
  * </pre>
  */
-public interface NoteSequenceKernel extends Standard<NoteSequenceDemo> {
+public interface NoteSequenceKernel extends Standard<NoteSequence> {
     /**
      * Inserts a note at the given position.
      *
