@@ -33,3 +33,13 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include kernal method interface, and enhanced interface with secondary, all with javadoc comments
+
+## 2026.04.01
+
+### Added
+
+- Designed abstract class for NoteSequence component
+
+### Updated
+
+- Changed design to include abstract secondary class for NoteSequence
