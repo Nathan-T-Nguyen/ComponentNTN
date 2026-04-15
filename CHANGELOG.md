@@ -43,3 +43,13 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include abstract secondary class for NoteSequence
+
+## 2026.04.01
+
+### Added
+
+- Designed kernel implementation for NoteSequence component
+
+### Updated
+
+- Changed design to include basic kernels in ArrayList for NoteSequence
