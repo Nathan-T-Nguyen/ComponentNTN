@@ -53,14 +53,3 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include basic kernels in ArrayList for NoteSequence
-
-## YYYY.4.24
-
-### Added
-
-- Designed test suite for NoteSequence component
-- Designed two different use cases for NoteSequence component
-
-### Updated
-
-- Changed design to include test files for potential applications for NoteSequence.
