@@ -303,18 +303,21 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think it became a bit better, as I actually had to consider real cases of how something should be implemented, and how actually
+useful it should be. Oftentimes assignments (so far) are usually one topic assignments that don't really test you on much form of
+software development, so this helps.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Not exactly? I mostly just had the concept of "software development" without too much knowledge of what it was like, so I mostly just followed
+the steps provided.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Yes, I enjoyed it. Gave me a similar feeling when I code for Game Jams; I felt like I was contributing to something that I had experience doing.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -322,29 +325,31 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I learned how to design a component from the ground up, including thinking about what methods are necessary and how they should behave.  Additionally, I gained experience with debugging design issues rather than just syntax errors. I also practiced organizing a larger project across multiple files instead of working in a single file.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Designed and implemented a custom Java component using layered architecture (kernel, secondary, implementation)
+- Applied design-by-contract principles to define and enforce method behavior
+- Developed and tested object-oriented interfaces and abstract classes
+- Debugged and refined component design across multiple iterations
+- Organized and maintained a multi-file Java project using version control (Git)
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+This project made me more interested in software development as a whole, especially the design side rather than just writing code. Again before this, I mostly focused on getting programs to work, but now I have a better appreciation for how code is structured and reused. It didn’t make me dislike the topic—instead, it made me realize that I enjoy building systems that feel complete and usable, similar to the kinds of projects I work on during game jams.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I could work on more personal projects that involve designing systems from scratch, such as small games (which I do quite often) or tools that use structured components. I could also spend more time learning Java libraries and improving my testing skills. In terms of mentors, I could reach out to professors from this course or others in the CSE department, as well as more experienced peers who have completed similar projects. Online communities and documentation could also serve as helpful resources.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -379,8 +384,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -431,7 +434,5 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
